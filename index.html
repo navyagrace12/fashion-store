@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FashionHub – Clothing Store</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+<style>
+
+    body {
+        background-image: url('fashionhub-website.jpg'); 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+	 .overlay {
+        background: rgba(0,0,0,0.6);
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        color:#556365;
+        padding: 20px;
+    }
+    .btn-shop {
+    background-color: #556365;
+    color: aqua;  
+    border-radius: 30px;  
+     padding: 12px 30px;
+    font-size: 20px;
+    font-weight: bold;            
+}
+
+.btn-shop:hover {
+    background-color: #e65c00;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+	 .product-card {
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        transition: 0.3s;
+        color: aqua;
+        font-style: italic;
+    }
+
+    .product-card:hover {
+        transform: scale(1.05);
+    }
+      
+    
+    
+    .product-card img {
+    border: 5px solid #fff;  
+    border-radius: 10px;      
+    }
+
+    .section-title {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 32px;
+        font-weight: bold;
+        font-family:'georgia',cursive;
+        color: aqua;
+    }
+</style>
+</head>
+
+<body>
+<div class="overlay">
+    <h1 style="font-size: 55px; font-weight: bold;">FashionHub</h1>
+    
+    <p style="font-size: 20px;">Trendy. Stylish. Affordable.</p>
+    
+    <a href="#products" class="btn btn-shop btn-lg mt-3">Shop Now</a>
+</div>
+<h2 id="products" class="section-title">Our Latest Collection</h2>
+
+
+
+<div class="container mt-4 mb-5">
+    <div class="row g-4">
+<div class="col-md-4">
+            <div class="product-card">
+                <img src="men'sshirt.jpg" class="img-fluid">
+                <div class="p-3">
+                    <h5>Men's Shirt</h5>
+                    <p>Comfortable cotton t-shirt for everyday style.</p>
+                    <a href="mens-wear.html" class="btn btn-primary w-100">Buy Now</a>
+                    
+                </div>
+            </div>
+        </div>
+        
+
+<div class="col-md-4">
+            <div class="product-card">
+                <img src="women's-dress.jpg" class="img-fluid">
+                <div class="p-3">
+                    <h5>Women's Dress</h5>
+                    <p>Elegant and light-weight dress for special occasions.</p>
+                    <a href="womens-wear.html" class="btn btn-primary w-100">Buy Now</a>
+                    
+                </div>
+            </div>
+        </div>
+    <div class="col-md-4">
+            <div class="product-card">
+                <img src="kids-dress.jpg" class="img-fluid">
+                <div class="p-3">
+                    <h5>Kids Wear</h5>
+                    <p>Soft and comfortable clothing for kids.</p>
+                    <a href="kids-wear.html" class="btn btn-primary w-100">Buy Now</a>
+                    
+                </div>
+            </div>
+        </div>     
+        
+       
+
+
+    </div>
+</div>
+</body>
+</html>
